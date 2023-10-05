@@ -1,11 +1,11 @@
 <template>
     <header>
-        <div class="container">
+        <div class="container xl:w-maxScreen">
             <div class="header-inner">
                 <div class="header-logo">
                     <img src="../assets/images/Logo.svg" alt="">
                 </div>
-                <nav>
+                <nav class="max-lg:hidden">
                     <ul class="nav-list">
                         <li class="nav-text"><a href="">About us</a></li>
                         <li class="nav-text"><a href="">Countries</a>
@@ -96,8 +96,13 @@
                             </ul>
                         </li>
                         <li class="nav-text"><img src="../assets/images/search.svg" alt=""></li>
+                        <svg class="nav_active hidden" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+  <path d="M5.33325 8H26.6666M5.33325 16H26.6666M5.33325 24H26.6666" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
                     </ul>
+                    
                 </nav>
+                <i class="fas fa-bars text-2xl hidden max-lg:block"></i>
             </div>
         </div>
     </header>
@@ -106,6 +111,9 @@
 
 </script>
 <style scoped>
+
+header{
+}
 .header-inner {
     display: flex;
     align-items: center;
