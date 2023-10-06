@@ -1,8 +1,8 @@
 <template lang="">
     <div class="mt-[64px]">
        <div class="container">
-        <p class="text-4xl font-bold text-center">How many Countries</p>
-        <p class="text-center text-xl">All countries that we represent</p>
+        <p class="text-4xl font-bold text-center my-4">How many Countries</p>
+        <p class="text-center text-xl mb-10">All countries that we represent</p>
         <div class="grid grid-cols-4 gap-4">
             <CCountry v-for="(el, idx) in countryList" :key="idx" :country="el.country" :dest="el.destination" :img="el.img"/>
         </div>

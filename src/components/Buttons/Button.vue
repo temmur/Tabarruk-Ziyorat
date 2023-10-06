@@ -39,6 +39,7 @@ import { computed } from 'vue';
     }
     .primary:hover{
         transition: .3s ease-in-out;
+        background-color: #c93e3e;
     }
     .outline{
         background-color: transparent;

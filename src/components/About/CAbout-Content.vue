@@ -1,5 +1,5 @@
 <template lang="">
-    <div>
+    <div class="max-lg:mb-10">
         <p class="text-title border-b-2  border-red-500 inline-block mb-3 pb-3">About us</p>
         <p class="text-lg ">Explore the valuable, historical, and heritage places of Turkic countries through our curated selection of articles, photos, and videos. Discover the beauty of ancient ruins, stunning mosques, medieval fortresses, and intricate tilework.</p>
         <p class="text-xl mt-8 font-semibold">Our supporters</p>

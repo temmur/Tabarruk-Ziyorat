@@ -1,8 +1,8 @@
 <template lang="">
     <div class="">
       <div class='container'>
-        <div class="grid grid-cols-2 gap-1">
-            <CAbout-Content/>
+        <div class="grid grid-cols-2 gap-1 max-lg:grid-cols-1">
+            <CAbout-Content />
             <CAboutCountriesVue/>
         </div>
         <div class="grid grid-cols-4 gap-5 mt-[65px]">
