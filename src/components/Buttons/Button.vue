@@ -9,7 +9,7 @@
 import { computed } from 'vue';
 
     const props = defineProps<{
-        variant?: 'primary' | 'outline' | 'secondary'
+        variant?: 'primary' | 'outline' | 'secondary' | 'default'
         title: String
     }>()
     const btnStyle = computed(()=>{
@@ -31,7 +31,6 @@ import { computed } from 'vue';
         outline: none;
         border: transparent;
         margin-left: 10px;
-        
     }
     .primary{
         background-color: #E54545;
@@ -42,16 +41,11 @@ import { computed } from 'vue';
         background-color: #c93e3e;
     }
     .outline{
-        background-color: transparent;
-        border: 1px solid royalblue ;
-        color: royalblue;
-        transition: .3s ease-in-out;
+        color: white;
+        padding: 12px 28px 12px 32px;
     }
     .outline:hover{
-        background-color: royalblue;
-        color: white;
-        border-radius: 8px;
-        transition: .3s ease-in-out;
+        color: #E54545;
     }
     .default{
         background-color: gainsboro;

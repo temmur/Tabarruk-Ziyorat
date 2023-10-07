@@ -6,6 +6,8 @@
     </div>
     <CAbout/>
     <CCountries/>
+    <CReligions/>
+    <CNews/>
   </div>
 </template>
 <script setup lang="ts">
@@ -13,6 +15,8 @@ import Header from '../components/Header.vue';
 import Hero from '../components/hero.vue';
 import CAbout from '../components/CAbout.vue';
 import CCountries from '../components/CCountries.vue';
+import CReligions from '../components/CReligions.vue'
+import CNews from '../components/СNews.vue'
 </script>
 <style>
     .home{

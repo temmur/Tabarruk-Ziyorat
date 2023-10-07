@@ -1,9 +1,9 @@
 <template lang="">
     <div class="mt-[64px]">
        <div class="container">
-        <p class="text-4xl font-bold text-center my-4">How many Countries</p>
-        <p class="text-center text-xl mb-10">All countries that we represent</p>
-        <div class="grid grid-cols-4 gap-4">
+        <CTitle title="How many countries"/>
+        <p class="text-center text-2xl mb-10 max-sm:text-base">All countries that we represent</p>
+        <div class="grid grid-cols-4 gap-4  max-sm:grid-cols-2 ">
             <CCountry v-for="(el, idx) in countryList" :key="idx" :country="el.country" :dest="el.destination" :img="el.img"/>
         </div>
        </div>
@@ -11,6 +11,7 @@
 </template>
 <script setup lang="ts">
 import CCountry from './Countries/CCountry.vue';
+import CTitle from './TitleText/CTitleText.vue'
 import {reactive} from 'vue'
 
 const countryList = reactive(
@@ -54,5 +55,8 @@ const countryList = reactive(
 )
 </script>
 <style scoped>
-    
+    .grid{
+        display: grid;
+        justify-content: center;
+    }
 </style>

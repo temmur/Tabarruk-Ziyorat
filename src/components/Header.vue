@@ -2,7 +2,7 @@
     <header>
         <div class="container xl:w-maxScreen">
             <div class="header-inner">
-                <div class="header-logo">
+                <div class="header-logo max-sm:w-[80%]">
                     <img src="../assets/images/Logo.svg" alt="">
                 </div>
                 <nav class="max-lg:hidden">

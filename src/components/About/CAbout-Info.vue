@@ -1,11 +1,11 @@
 <template lang="">
     <div class="relative flex items-center justify-between bg-grayBack  rounded-xl" >
         <div class="p-4">
-            <p class='text-[40px] font-bold'>{{mount}}</p>
-            <p class="text-grayColor text-xl">{{name}}</p>
+            <p class='text-[40px] font-bold max-sm:text-[24px]'>{{mount}}</p>
+            <p class="text-grayColor text-xl max-sm:text-[13px]">{{name}}</p>
         </div>
         <div class="absolute bottom-0 right-0">
-            <img :src="img" alt="">
+            <img :src="img" alt="" class="max-sm:w-[73px]">
         </div>
     </div>
 </template>

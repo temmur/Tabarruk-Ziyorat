@@ -2,8 +2,8 @@
   <div class="hero">
     <div class="container max-w xl:max-w-[90%]">
       <div class="hero-inner flex flex-col items-center">
-        <p class="text-xl flex justify-center">
-          <img class="mx-0.5" src="../assets/images/map-pin-alt.svg" alt="" />Samarkand, Uzbekistan
+        <p class="text-xl flex justify-center max-sm:text-sm">
+          <img class="max-sm:w-4 max-sm:mr-2" src="../assets/images/map-pin-alt.svg" alt="" />Samarkand, Uzbekistan
         </p>
         <h1 class="text-center text-[5rem] capitalize font-bannerFont font-bold banner-shadow max-sm:text-[40px]">
           registan square

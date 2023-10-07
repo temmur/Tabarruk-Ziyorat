@@ -5,7 +5,7 @@
             <CAbout-Content />
             <CAboutCountriesVue/>
         </div>
-        <div class="grid grid-cols-4 gap-5 mt-[65px]">
+        <div class="grid grid-cols-4 gap-5 mt-[65px] max-sm:grid-cols-2">
             <CAboutInfoVue v-for="(el, idx) in countInfo" :key="idx" :mount="el.amount" :name="el.name" :img="el.img"/>
           
         </div>
