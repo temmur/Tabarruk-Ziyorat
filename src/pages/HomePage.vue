@@ -8,6 +8,9 @@
     <CCountries/>
     <CReligions/>
     <CNews/>
+   <div class="grid grid-cols-3">
+    <CCollpase v-for="(el, idx) in CData" :key="idx"/>
+   </div>
   </div>
 </template>
 <script setup lang="ts">
@@ -17,6 +20,9 @@ import CAbout from '../components/CAbout.vue';
 import CCountries from '../components/CCountries.vue';
 import CReligions from '../components/CReligions.vue'
 import CNews from '../components/СNews.vue'
+import CCollpase from '../components/CCollapse.vue'
+import CData from '../assets/Data/NewsData'
+import {ref} from 'vue'
 </script>
 <style>
     .home{

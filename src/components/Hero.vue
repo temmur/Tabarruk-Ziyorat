@@ -35,7 +35,7 @@
           </Button>
         </div>
         <div>
-          <Carousel />
+          <!-- <Carousel /> -->
         </div>
       </div>
     </div>

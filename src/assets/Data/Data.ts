@@ -1,4 +1,4 @@
-const ReligionData = [
+export const ReligionData = [
     {
         religion: "Islam",
         content: "This website is created to share information about historical, unique places located in Turkic countries.",
@@ -17,4 +17,4 @@ const ReligionData = [
 ]
 
 
-export default ReligionData;
+

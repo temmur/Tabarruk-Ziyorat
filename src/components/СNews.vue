@@ -6,6 +6,7 @@
         <div class="grid grid-cols-2 gap-4 mt-10 grid-rows-2">
             <News v-for="(el, idx) of NewsData" :key="idx" :title="el.title" :subtitle="el.subtitle" :img="el.img" class="grid grid-cols-2"/>
         </div>
+        <!-- <CCollpase v-for="(el, idx) in CData" :key="idx"/> -->
        </div>
     </div>
 </template>
@@ -13,6 +14,9 @@
 import News from '../components/News/News.vue'
 import CTitle from './TitleText/CTitleText.vue'
 import NewsData from '../assets/Data/NewsData'
+
+
+
 </script>
 <style scoped>
     
