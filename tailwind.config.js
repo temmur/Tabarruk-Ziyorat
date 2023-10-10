@@ -17,11 +17,13 @@ export default {
       },
       backgroundColor:{
         bgColor: 'rgb(9, 11, 30)',
-        grayBack: 'rgba(255, 255, 255, 0.04)'
+        grayBack: 'rgba(255, 255, 255, 0.04)',
+        inputBack: 'rgba(255, 255, 255, 0.10);'
       },
       colors:{
         redColor: '#E54545',
-        grayColor: "rgba(255, 255, 255, 0.60)"
+        grayColor: "rgba(255, 255, 255, 0.60)",
+        searchBorder: 'rgba(255, 255, 255, 0.20)'
       }
     },
   },

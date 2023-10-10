@@ -1,10 +1,10 @@
 <template>
-    <div class=""
+    <div class="w-[600px] bg-grayBack"
           :class="{ '!border-red-600': error }"
     >
       <slot name="prefix"></slot>
       <input
-        class="val" 
+        class="val w-[100%] outline-none text-white pl-5 py-2 rounded-xl bg-inputBack border borde-searchBorder" 
         v-bind="{ type, placeholder, minLength, maxLength, id }"
         :value="modelValue"
         @input="(event) => emit('update:modelValue', event.target?.value)"
@@ -37,17 +37,6 @@
   }>()
   </script>
   
-  <style lang="css" scoped>
-    div{
-        width: 100%;
-    }
-    input{
-        width: 100%;
-        background-color: tomato;
-        outline: none;
-        border: 1px solid transparent;
-        font-size: 18px;
-        padding: 10px 0;
-        padding: 5px;
-    }
+  <style scoped>
+    
 </style>

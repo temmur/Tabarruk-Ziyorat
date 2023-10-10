@@ -5,7 +5,7 @@
                 <div class="header-logo max-sm:w-[80%]">
                     <img src="../assets/images/Logo.svg" alt="">
                 </div>
-                <nav class="max-lg:hidden">
+                <nav class="max-lg:hidden" :class="showSearch? 'hidden' : 'block' ">
                     <ul class="nav-list">
                         <li class="nav-text"><a href="">About us</a></li>
                         <li class="nav-text"><a href="">Countries</a>
@@ -95,20 +95,28 @@
                                 <li><img src="../assets/images/russ.svg" alt="">Русский</li>
                             </ul>
                         </li>
-                        <li class="nav-text"><img src="../assets/images/search.svg" alt=""></li>
+                        <li class="nav-text" @click="openSearch"><img src="../assets/images/search.svg" alt=""></li>
                         <svg class="nav_active hidden" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
   <path d="M5.33325 8H26.6666M5.33325 16H26.6666M5.33325 24H26.6666" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
                     </ul>
-                    
                 </nav>
+              <div class="flex items-center">
+                <CSearch class="max-lg:'hidden'" v-show="showSearch"/>
+                <i class="fa-solid fa-xmark text-xl" :class="showSearch? 'block' : 'hidden'" @click="openSearch"></i>
+              </div>
                 <i class="fas fa-bars text-2xl hidden max-lg:block"></i>
             </div>
         </div>
     </header>
 </template>
 <script setup>
-
+import CSearch from '../components/CSearch.vue'
+import { ref, reactive } from 'vue';
+const showSearch = ref(false)
+function openSearch(){
+    showSearch.value = !showSearch.value
+}
 </script>
 <style scoped>
 

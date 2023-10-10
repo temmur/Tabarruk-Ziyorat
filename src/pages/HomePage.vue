@@ -8,9 +8,10 @@
     <CCountries/>
     <CReligions/>
     <CNews/>
-   <div class="grid grid-cols-3">
-    <CCollpase v-for="(el, idx) in CData" :key="idx"/>
+   <div class="grid grid-cols-3 max-md:grid max-md:grid-cols-1">
+    <CCollpase v-for="(el, idx) in CData" :key="idx" :show="active === idx" @click="openItem(idx)"/>
    </div>
+
   </div>
 </template>
 <script setup lang="ts">
@@ -23,6 +24,16 @@ import CNews from '../components/СNews.vue'
 import CCollpase from '../components/CCollapse.vue'
 import CData from '../assets/Data/NewsData'
 import {ref} from 'vue'
+
+const active = ref(0)
+
+function openItem(id: number) {
+  if(active.value === id) {
+    active.value = null
+  } else {
+    active.value = id
+  }
+}
 </script>
 <style>
     .home{
