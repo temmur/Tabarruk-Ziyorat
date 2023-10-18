@@ -6,112 +6,20 @@
                     <img src="../assets/images/Logo.svg" alt="">
                 </div>
                 <nav class="max-lg:hidden" :class="showSearch? 'hidden' : 'block' ">
-                    <ul class="nav-list">
-                        <li class="nav-text"><a href="">About us</a></li>
-                        <li class="nav-text"><a href="">Countries</a>
-                            <ul class="nav-sub-content">
-                                <li>
-                                    <img src="../assets/images/Uzbekistan.svg" alt="">
-                                    <div class="nav-subtext">
-                                        <p>Uzbekistan</p>
-                                        <p>32 destinations</p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <img src="../assets/images/Uzbekistan.svg" alt="">
-                                    <div class="nav-subtext">
-                                        <p>Uzbekistan</p>
-                                        <p>32 destinations</p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <img src="../assets/images/Uzbekistan.svg" alt="">
-                                    <div class="nav-subtext">
-                                        <p>Uzbekistan</p>
-                                        <p>32 destinations</p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <img src="../assets/images/Uzbekistan.svg" alt="">
-                                    <div class="nav-subtext">
-                                        <p>Uzbekistan</p>
-                                        <p>32 destinations</p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <img src="../assets/images/Uzbekistan.svg" alt="">
-                                    <div class="nav-subtext">
-                                        <p>Uzbekistan</p>
-                                        <p>32 destinations</p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <img src="../assets/images/Uzbekistan.svg" alt="">
-                                    <div class="nav-subtext">
-                                        <p>Uzbekistan</p>
-                                        <p>32 destinations</p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <img src="../assets/images/Uzbekistan.svg" alt="">
-                                    <div class="nav-subtext">
-                                        <p>Uzbekistan</p>
-                                        <p>32 destinations</p>
-                                    </div>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="nav-text"><a href="">Religions</a>
-                            <ul class="nav-sub-content nav-pray">
-                                <li>
-                                    <img src="../assets/images/Islam.svg" alt="">
-                                    <div class="nav-subtext">
-                                        <p>Islam</p>
-                                        <p>32 Destinations</p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <img src="../assets/images/Christian.svg" alt="">
-                                    <div class="nav-subtext">
-                                        <p>Christian</p>
-                                        <p>24 Destinations</p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <img src="../assets/images/Budism.svg" alt="">
-                                    <div class="nav-subtext">
-                                        <p>Buddism</p>
-                                        <p>19 Destinations</p>
-                                    </div>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="nav-text"><a href="">Heritage map</a></li>
-                        <li class="nav-text"><a href="">Help</a></li>
-                        <li class="nav-text"><img src="../assets/images/The UK.svg" alt="">
-                            <ul class="nav-sub-content nav-language">
-                                <li ><img src="../assets/images/russ.svg" alt="">Русский</li>
-                                <li><img src="../assets/images/russ.svg" alt="">Русский</li>
-                                <li><img src="../assets/images/russ.svg" alt="">Русский</li>
-                            </ul>
-                        </li>
-                        <li class="nav-text" @click="openSearch"><img src="../assets/images/search.svg" alt=""></li>
-                        <svg class="nav_active hidden" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
-  <path d="M5.33325 8H26.6666M5.33325 16H26.6666M5.33325 24H26.6666" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-                    </ul>
+                   <CNav/>
                 </nav>
-              <div class="flex items-center">
+              <!-- <div class="flex items-center">
                 <CSearch class="max-lg:'hidden'" v-show="showSearch"/>
                 <i class="fa-solid fa-xmark text-xl" :class="showSearch? 'block' : 'hidden'" @click="openSearch"></i>
-              </div>
-                <i class="fas fa-bars text-2xl hidden max-lg:block"></i>
+              </div> -->
+                <i class="fas fa-bars text-2xl hidden max-lg:block"></i> {{  list  }}
             </div>
         </div>
     </header>
 </template>
 <script setup>
 import CSearch from '../components/CSearch.vue'
+import CNav from './Header/CNav.vue';
 import { ref, reactive } from 'vue';
 const showSearch = ref(false)
 function openSearch(){

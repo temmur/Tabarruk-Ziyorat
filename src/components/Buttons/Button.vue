@@ -48,8 +48,8 @@ import { computed } from 'vue';
         color: #E54545;
     }
     .default{
-        background-color: gainsboro;
-        color: black;
+        background-color: #2C2E3E;
+        color: white;
         padding: 12px 28px 12px 32px;
     }
     .secondary{
