@@ -1,11 +1,11 @@
 <template>
-    <div class="py-10 map">
-        <div class="container my-5">
-        <p class="text-4xl font-bold">Our Mission</p>
-        <p class="text-lg my-4 w-[60%]">Explore the valuable, historical, and heritage places of Turkic countries through our curated selection of articles, photos, and videos. Discover the beauty of ancient ruins, stunning mosques, medieval fortresses, and intricate tilework, and learn about legendary rulers, artists, and architects who left their mark on the region.</p>
+    <div class="py-10 map bg-map max-md:bg-none">
+        <div class="container my-5 w-50% ">
+        <p class="text-4xl font-bold max-md:text-center">Our Mission</p>
+        <p class="text-lg my-4 w-[60%] max-md:text-center max-md:w-full">Explore the valuable, historical, and heritage places of Turkic countries through our curated selection of articles, photos, and videos. Discover the beauty of ancient ruins, stunning mosques, medieval fortresses, and intricate tilework, and learn about legendary rulers, artists, and architects who left their mark on the region.</p>
         <p class="text-xl">Our supporters</p>
         <div >
-           <CSupporter v-for="(el, idx) in supporterData" :key="idx" :name="el.name" :logo="el.logo" :logo2="el.logo2"/>
+           <CSupporter v-for="(el, idx) in supporterData" :key="idx" :name="el.name" :logo="el.logo" :logo2="el.logo2" class="max-md:w-full"/>
         </div>
     </div>
     </div>
@@ -28,6 +28,10 @@ const supporterData = reactive([
 </script>
 <style scoped>
 .map{
-    background: rgba(255, 255, 255, 0.04) url(../assets//images/Map.svg);
+    
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: 60%;
 }
 </style>

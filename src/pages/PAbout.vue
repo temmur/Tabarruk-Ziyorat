@@ -5,6 +5,7 @@
    </div>
    <CAbout/>
    <CMap/>
+   <CStatements/>
    <CFooter/>
 
 </template>
@@ -18,7 +19,7 @@ import CHero from '../AboutComponents/Hero.vue'
 import CFooter from "../components/CFooter.vue";
 import CAbout from '../AboutComponents/CAbout.vue'
 import CMap from "../AboutComponents/CMap.vue";
-
+import CStatements from "../AboutComponents/CStatements.vue";
 const { x, y } = useCustomToast()
 const { mounted } = useMounted()
 const show = ref(false)
@@ -42,9 +43,7 @@ body{
   opacity: 0;
 }
 .banner{
-    /* background-image: url(../assets/images/PAbout/Banner.svg); */
-    background:linear-gradient(180deg, #07091C -4.12%, rgba(7, 9, 28, 0.60) 49.39%, rgba(7, 9, 28, 0.20) 85.78%, #07091C 100%), url(../assets/images/Budism.svg);
-    height: 500px;
-  
+  background: url("images/PAbout/Banner.svg");
+  height: 500px;
 }
 </style>

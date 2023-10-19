@@ -20,17 +20,19 @@ export default {
         grayBack: 'rgba(255, 255, 255, 0.04)',
         inputBack: 'rgba(255, 255, 255, 0.10)',
         blurBack: 'rgba(7, 9, 28, 0.12)',
-        inputDefault: "#2C2E3E"
+        inputDefault: "#2C2E3E",
+        cardBackground: '#252738;',
       },
       colors:{
         redColor: '#E54545',
         midGray: 'rgba(255, 255, 255, 0.40)',
         grayColor: "rgba(255, 255, 255, 0.60)",
         searchBorder: 'rgba(255, 255, 255, 0.20)',
-        
+        cardColor: 'rgba(255, 255, 255, 0.80)',
       },
       backgroundImage:{
-        star: "url('images/Star.svg')"
+        star: "url('images/Star.svg')",
+        map: "url('images/Map.svg')",
       }
     },
   },
