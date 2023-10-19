@@ -9,7 +9,7 @@ export default {
         title: '40px'
       },
       fontFamily:{
-        bannerFont: 'Bangers',
+        bannerFont: 'Playfair Display',
         textFont: 'Gilroy-Bold'
       },
       maxWidth:{
@@ -30,7 +30,7 @@ export default {
         
       },
       backgroundImage:{
-        "star": "url('images/Star.svg')"
+        star: "url('images/Star.svg')"
       }
     },
   },

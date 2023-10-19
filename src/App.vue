@@ -1,13 +1,6 @@
-<script setup>
-import HomePage from './pages/HomePage.vue';
-
-
-</script>
-
 <template>
-  <HomePage/>
+ <div>
+  <div id="breadcrumb"></div>
+  <RouterView />
+ </div>
 </template>
-
-<style scoped>
-
-</style>

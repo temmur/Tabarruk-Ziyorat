@@ -17,7 +17,7 @@ defineProps<Props>()
 <style scoped>
 .countryBox:hover  .countryImg{
     border-radius: 90px;
-    box-shadow:0px 0px 9px white;
+    box-shadow:0px 0px 9px rgb(46, 34, 34);
 }
 
 </style>

@@ -47,6 +47,7 @@ import Button from './Buttons/Button.vue'
 import Carousel from './Hero/Carousel.vue'
 </script>
 <style scoped >
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Playfair+Display:wght@700&display=swap');
 .btn_section {
   display: flex;
   align-items: center;

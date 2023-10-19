@@ -1,7 +1,7 @@
 <template>
     <div>
         <ul class="flex items-center justify-between">
-            <li class="mx-4 hover:text-midGray"><a href="" class="text-base font-bold" >About us</a></li>
+            <li class="mx-4 hover:text-midGray"><RouterLink to="/about" class="text-base font-bold" >About us</RouterLink></li>
             <li class="relative mx-4 hover:text-midGray"><a href="" class="text-base font-bold" @click.prevent="toggleNav()" @blur="toggleClose()">Countries</a>
                 <CSubNav v-if="state" />
             </li>

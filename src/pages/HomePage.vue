@@ -1,13 +1,6 @@
 <template>
   <div class="bg-bgColor">
     <div id="breadcrumb"></div>
-    <!-- <COptions @click="myButton" class="mt-4" :list="[{item: 'ad', status: 'accepted'}]"  v-slot="data">
-      <div :class="{ 'text-red-600': data.count === 1 }">lalaku</div>
-      {{ data.text }} {{ data.count }} -->
-      <!-- <template v-slot:[activeSlot]>
-        <p> hey bro, this is content </p>
-      </template> -->
-    <!-- </COptions> -->
     <div class="home h-screen">
         <Header class="mb-10"/>
         <Hero/>
@@ -21,10 +14,6 @@
    <CInstagram/>
    <CPartners/>
   <CFooter/>
-   <!-- <div class="grid grid-cols-3 max-md:grid max-md:grid-cols-1">
-    <CCollpase v-for="(el, idx) in CData" :key="idx" :show="active === idx" @click="openItem(idx)"/>
-   </div> -->
-
   </div>
 </template>
 <script setup lang="ts">

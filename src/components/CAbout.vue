@@ -1,4 +1,4 @@
-<template lang="">
+<template>
     <div class="">
       <div class='container'>
         <div class="grid grid-cols-2 gap-1 max-lg:grid-cols-1">
