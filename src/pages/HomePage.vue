@@ -1,7 +1,7 @@
 <template>
   <div class="bg-bgColor">
     <div id="breadcrumb"></div>
-    <div class="home h-screen">
+    <div class="home ">
         <Header class="mb-10"/>
         <Hero/>
     </div>
@@ -31,6 +31,7 @@ import CInstagram from '../components/CInstagram.vue';
 import {ref, provide, defineAsyncComponent} from 'vue'
 import CPartners from '../components/CPartners.vue';
 import CFooter from '../components/CFooter.vue'
+
 const AsyncComp = defineAsyncComponent({
   loader: () => import('../components/COptions.vue'),
   loadingComponent: CData,
@@ -50,7 +51,6 @@ function openItem(id: number) {
 }
 const myButton = () => {
   console.log('my button');
-  
 }
 </script>
 <style>

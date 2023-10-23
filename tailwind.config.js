@@ -1,7 +1,10 @@
 
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: ['./index.html', './src/**/*.{html,vue,jsx,tsx,js}'],
+  content: ['./index.html', './src/**/*.{html,vue,jsx,tsx,js}',
+  'node_modules/flowbite-vue/**/*.{js,jsx,ts,tsx}',
+  'node_modules/flowbite/**/*.{js,jsx,ts,tsx}'
+], 
   theme: {
     extend: {
       fontSize:{
@@ -22,6 +25,8 @@ export default {
         blurBack: 'rgba(7, 9, 28, 0.12)',
         inputDefault: "#2C2E3E",
         cardBackground: '#252738;',
+        blueBackground: 'rgb(8, 10, 28)',
+        mobileSearch: 'rgba(255, 255, 255, 0.12)'
       },
       colors:{
         redColor: '#E54545',
@@ -33,8 +38,9 @@ export default {
       backgroundImage:{
         star: "url('images/Star.svg')",
         map: "url('images/Map.svg')",
+        video: "url('images/banner.png')"
       }
     },
   },
-  plugins: [],
+  plugins: [ require('flowbite/plugin')],
 }

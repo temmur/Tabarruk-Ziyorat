@@ -1,6 +1,5 @@
 <template>
-  <div class="hero">
-    <div class="container max-w xl:max-w-[90%]">
+    <div class="container">
       <div class="hero-inner flex flex-col items-center overflow-hidden">
         <p class="text-xl flex justify-center max-sm:text-sm">
           <img class="max-sm:w-4 max-sm:mr-2" src="../assets/images/map-pin-alt.svg" alt="" />Samarkand, Uzbekistan
@@ -34,13 +33,10 @@
             </template>
           </Button>
         </div>
-        <div class="mt-[100px]">
-          <Carousel/>
-          <!-- <Carousel /> -->
-        </div>
       </div>
     </div>
-  </div>
+    <Carousel class="mt-10"/>
+
 </template>
 <script setup>
 import Button from './Buttons/Button.vue'

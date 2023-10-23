@@ -6,17 +6,18 @@
             <p class="text-sm text-grayColor">{{ des }}</p>
         </div>
     </li>
+    
 </template>
 <script setup lang="ts">
-import { defineProps, ref, reactive } from 'vue';
+import { defineProps, ref, reactive, inject } from 'vue';
+
 interface Props {
-    country: string
-    flag: string
+    country?: string
+    flag?: string
     des?: string
     data?: {[key: string]: string}[]
   }
   defineProps<Props>()
   const state = ref(false)
-
 
 </script>

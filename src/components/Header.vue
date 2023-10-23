@@ -1,30 +1,46 @@
 <template>
-    <header>
-        <div class="container xl:w-maxScreen">
+    <header class="header" :class="{'fixed bg-blueBackground z-50 top-0 transition ease-in-out delay-100' : isSticky}">
+        <div class="container">
             <div class="header-inner">
                 <div class="header-logo max-sm:w-[80%]">
-                    <img src="../assets/images/Logo.svg" alt="">
+                  <router-link to="/"><img src="../assets/images/Logo.svg" alt=""></router-link>
                 </div>
-                <nav class="max-lg:hidden" :class="showSearch? 'hidden' : 'block' ">
-                   <CNav/>
+                <nav class="max-lg:hidden" :class="showSearch? 'hidden' : 'block'">
+                   <CHeaderNav/>
                 </nav>
               <!-- <div class="flex items-center">
                 <CSearch class="max-lg:'hidden'" v-show="showSearch"/>
                 <i class="fa-solid fa-xmark text-xl" :class="showSearch? 'block' : 'hidden'" @click="openSearch"></i>
               </div> -->
-                <i class="fas fa-bars text-2xl hidden max-lg:block"></i> {{  list  }}
+                <i class="fas fa-bars text-2xl hidden max-lg:block" :class="state? 'fas fa-bars' : 'fa-solid fa-xmark'" @click="state = !state"></i> 
+               
             </div>
         </div>
     </header>
+    <CResponseNav :class="state? 'hidden' : 'fixed'"/>
 </template>
 <script setup>
 import CSearch from '../components/CSearch.vue'
 import CNav from './Header/CNav.vue';
-import { ref, reactive } from 'vue';
-const showSearch = ref(false)
-function openSearch(){
-    showSearch.value = !showSearch.value
-}
+import CHeaderNav from './Header/CHeaderNav.vue';
+import {ref, reactive, onMounted} from 'vue'
+import CResponseNav from './Header/CResponseNav.vue';
+const state = ref(true)
+
+const isSticky = ref(false)
+const handleScroll = () => {
+      if (window.pageYOffset > 75 ) {
+        if(window.screen.width < 1025){
+            isSticky.value = true;
+        }
+      } else {
+        isSticky.value = false;
+      }
+    };
+    
+    onMounted(() => {
+      window.addEventListener('scroll', handleScroll);
+    });
 </script>
 <style scoped>
 

@@ -23,6 +23,10 @@
   const search = ref('')
   const show = ref(false)
 
+  const filterObjects = computed(()=>{
+    
+    return 
+  })
 
   
   </script>

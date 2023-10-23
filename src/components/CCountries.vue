@@ -3,7 +3,7 @@
        <div class="container">
         <CTitle title="How many countries"/>
         <p class="text-center text-2xl mb-10 max-sm:text-base">All countries that we represent</p>
-        <div class="grid grid-cols-4 gap-4  max-sm:grid-cols-2 ">
+        <div class="grid grid-cols-4 gap-4 max-sm:grid-cols-2 ">
             <CCountry v-for="(el, idx) in countryList" :key="idx" :country="el.country" :dest="el.destination" :img="el.img"/>
         </div>
        </div>

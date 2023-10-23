@@ -1,10 +1,10 @@
 <template>
-    <div class="container py-28 grid grid-cols-12 gap-6">
+    <div class="container py-28 grid grid-cols-12 gap-6 text-blue-600">
         <div class="col-span-4 flex flex-col gap-6 rounded border p-6 h-fit">
             <router-link to="/students">About</router-link>
             <router-link to="/students/contact">Contact</router-link>
         </div>
-        <div class="col-span-8 rounded border p-6">
+        <div class="col-span-8 rounded border p-6 border-red-500">
             <router-view></router-view>
         </div>
         <!-- <RouterLink 
