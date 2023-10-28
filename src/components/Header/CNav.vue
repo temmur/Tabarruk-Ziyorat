@@ -2,71 +2,112 @@
    
         <ul class="flex items-center justify-between">
             <li class="mx-4 hover:text-midGray"><RouterLink to="/about" class="text-base font-bold" >About us</RouterLink></li>
-            <li class="relative mx-4 hover:text-midGray"><a href="" class="text-base font-bold" @click.prevent="toggleNav()" @blur="toggleClose()">Countries</a>
-                <CSubNav v-if="state" :data="CountriesInfo"/>
+            <li class="relative mx-4 text-base font-bold hover:text-midGray" @click.prevent="toggleNav('countries')" @blur="toggleClose()">Countries
+               <Transition name="fade" mode="out-in">
+                <CSubNav v-if="currentDropdown === 'countries'" :data="CountriesInfo" />
+               </Transition>
             </li>
-            <li class="mx-4 hover:text-midGray"><a href="About us" class="text-base font-bold">Religions</a>
-                
+            <li class="relative mx-4 text-base font-bold hover:text-midGray" @click.prevent="toggleNav('religions')" @focusout="toggleClose('religions')" >Religions
+               <Transition name="fade">
+                <CSubNav v-if="currentDropdown === 'religions'" :data="ReligionData" class="grid grid-cols-1"/>
+               </Transition>
             </li>
-            <li class="mx-4 hover:text-midGray"><a href="About us" class="text-base font-bold">Heritage map</a></li>
-            <li class="mx-4 hover:text-midGray"><a href="About us" class="text-base font-bold">Help</a></li>
+            <li class="mx-4 text-base font-bold hover:text-midGray">Heritage map</li>
+            <li class="mx-4 text-base font-bold hover:text-midGray">Help</li>
         </ul>
 
 </template>
 <script setup lang="ts">
+import { Dropdown } from 'flowbite-vue';
 import { ref, reactive, provide } from 'vue';
 import CSubNav from '../Header/CSubNav.vue';
 import NavLists from '../Header/NavLists.vue'
-const state = ref(false)
-const toggleNav=(e)=>{
-    state.value = !state.value
+const currentDropdown = ref(null)
+const toggleNav=(dropDownName)=>{
+  if(currentDropdown.value === dropDownName){
+    currentDropdown.value = null
+  }else{
+    currentDropdown.value = dropDownName
+  }
 }
-const toggleClose=(e)=>{
-    if(state.value === true) {
-        state.value = !state.value
-    }
+const toggleClose=()=>{
+   
 }
 const CountriesInfo = reactive(
         [
     {
-        country: "Uzbekistan",
-        destinations: "32 destinations",
-        flag: "images/UzbekistanFlag.svg"
+        title: "Uzbekistan",
+        destination: 32,
+        img: "images/UzbekistanFlag.svg"
     },
     {
-        country: "Türkiye",
-        destinations: "27 destinations",
-        flag: "images/TurkiyeFlag.svg"
+        title: "Türkiye",
+        destination: 27,
+        img: "images/TurkiyeFlag.svg"
     },
     {
-        country: "Turkmenitan",
-        destinations: "24 destinations",
-        flag: "images/TurkmenistanFlag.svg"
+        title: "Turkmenitan",
+        destination: 24,
+        img: "images/TurkmenistanFlag.svg"
     },
     {
-        country: "Azerbaijan",
-        destinations: "12 destinations",
-        flag: "images/UzbekistanFlag.svg"
+        title: "Azerbaijan",
+        destination: 12,
+        img: "images/UzbekistanFlag.svg"
     },
     {
-        country: "Hungary",
-        destinations: "19 destinations",
-        flag: "images/HungaryFlag.svg"
+        title: "Hungary",
+        destination: 19,
+        img: "images/HungaryFlag.svg"
     },
     {
-        country: "Kazakhstan",
-        destinations: "21 destinations",
-        flag: "images/KazakhstanFlag.svg"
+        title: "Kazakhstan",
+        destination: 21,
+        img: "images/KazakhstanFlag.svg"
     }, 
     {
-        country: "Kyrgyzstan",
-        destinations: "9 destinations",
-        flag: "images/KyrgyzstanFlag.svg"
+        title: "Kyrgyzstan",
+        destination: 9,
+        img: "images/KyrgyzstanFlag.svg"
     }
 
 ]
-    )
+    );
 
+const ReligionData = ref(
+    [
+    {
+        title: "Islam",
+        content: "This website is created to share information about historical, unique places located in Turkic countries.",
+        img: 'images/religion1.svg',
+        destination: 32
+    },
+    {
+        title: "Christianity",
+        content: "This website is created to share information about historical, unique places located in Turkic countries.",
+        img: 'images/religion2.svg',
+        destination: 24,
+    },
+    {
+        title: "Buddism",
+        content: "This website is created to share information about historical, unique places located in Turkic countries.",
+        img: 'images/religion3.svg',
+        destination: 19
+    }
+]
+)
 </script>
+<style lang="css">
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+
+</style>
 
 

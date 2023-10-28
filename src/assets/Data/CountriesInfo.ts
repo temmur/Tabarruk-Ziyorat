@@ -20,7 +20,7 @@ export const CountriesInfo = [
         flag: "images/AzerbaijanFlag.svg"
     },
     {
-        country: "HUngary",
+        country: "Hungary",
         destinations: "19 destinations",
         flag: "images/HungaryFlag.svg"
     },

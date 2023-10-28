@@ -5,13 +5,7 @@
         <p class="text-2xl font-bold mb-4">{{religion}}</p>
        </div>
         <p class="mb-4">{{context}}</p>
-        <Button title="See more" variant="outline">
-            <template #suffix>
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-<path d="M5 9.99992H15M15 9.99992L10.8333 5.83325M15 9.99992L10.8333 14.1666" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-            </template>
-        </Button>
+      <p class="text-base flex items-center">See more <i class="fa-solid fa-arrow-right ml-2"></i></p>
     </div>
 </template>
 <script setup lang="ts">
@@ -50,4 +44,5 @@ defineProps<Props>()
         backdrop-filter: blur(15px);
         transition: .2s ease-in-out;
     }
+
 </style>
