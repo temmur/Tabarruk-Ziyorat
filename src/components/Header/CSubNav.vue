@@ -14,7 +14,7 @@
         </ul>
         
 </template>
-<script lang="ts">
+<script setup lang="ts">
 import { defineProps, ref, reactive, inject, defineEmits } from 'vue';
 import NavLists from '../Header/NavLists.vue'
 interface Props {

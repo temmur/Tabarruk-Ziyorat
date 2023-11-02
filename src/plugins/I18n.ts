@@ -9,7 +9,7 @@ const messages = {
 }
 const locale = localStorage.getItem('locale')
 const i18n = createI18n({
-    locale:  document.cookie.split('=')[1],
+    locale:  'ru',
     messages
 })
 
