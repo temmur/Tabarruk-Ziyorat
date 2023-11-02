@@ -14,7 +14,7 @@
                 </div>
                 <img class="absolute z-10 top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%] max-md:w-[170px] max-md:h-[180px]" src="images/partnerStar.svg" alt="">
            <div class="flex gap-3 overflow-hidden">
-            <Vue3Marquee :pause-on-hover="true" class="flex gap-3">
+            <Vue3Marquee :pause-on-hover="true" class="flex gap-3" :direction="'reverse'">
             <CPartnersCarousel v-for="(el, idx) of partners" :key="idx" :el="el"/>
         </Vue3Marquee>
            </div>

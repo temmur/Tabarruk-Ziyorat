@@ -1,19 +1,19 @@
 <template>
    
         <ul class="flex items-center justify-between">
-            <li class="mx-4 hover:text-midGray"><RouterLink to="/about" class="text-base font-bold" >About us</RouterLink></li>
-            <li class="relative mx-4 text-base font-bold hover:text-midGray" @click.prevent="toggleNav('countries')" @blur="toggleClose()">Countries
+            <li class="mx-4 cursor-pointer hover:text-midGray"><RouterLink to="/about" class="text-base font-bold" >{{ $t('about') }}</RouterLink></li>
+            <li class="relative cursor-pointer mx-4 text-base font-bold hover:text-midGray" @click.prevent="toggleNav('countries')" @blur="toggleClose()">{{ $t('countries') }}
                <Transition name="fade" mode="out-in">
                 <CSubNav v-if="currentDropdown === 'countries'" :data="CountriesInfo" />
                </Transition>
             </li>
-            <li class="relative mx-4 text-base font-bold hover:text-midGray" @click.prevent="toggleNav('religions')" @focusout="toggleClose('religions')" >Religions
+            <li class="relative mx-4 text-base font-bold cursor-pointer hover:text-midGray" @click.prevent="toggleNav('religions')" @focusout="toggleClose('religions')" >{{ $t('religions') }}
                <Transition name="fade">
                 <CSubNav v-if="currentDropdown === 'religions'" :data="ReligionData" class="grid grid-cols-1"/>
                </Transition>
             </li>
-            <li class="mx-4 text-base font-bold hover:text-midGray">Heritage map</li>
-            <li class="mx-4 text-base font-bold hover:text-midGray">Help</li>
+            <li class="mx-4 text-base font-bold hover:text-midGray cursor-pointer"><RouterLink to="/exam">{{ $t('map') }}</RouterLink></li>
+            <li class="mx-4 text-base font-bold hover:text-midGray cursor-pointer">{{ $t('map') }}</li>
         </ul>
 
 </template>

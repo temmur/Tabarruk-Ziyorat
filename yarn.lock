@@ -97,6 +97,27 @@
   resolved "https://registry.npmjs.org/@humanwhocodes/object-schema/-/object-schema-1.2.1.tgz"
   integrity sha512-ZnQMnLV4e7hDlUvw8H+U8ASL02SS2Gn6+9Ac3wGGLIe7+je2AeAOxPY+izIPJDfFDb7eDjev0Us8MO1iFRN8hA==
 
+"@intlify/core-base@9.6.4":
+  version "9.6.4"
+  resolved "https://registry.npmjs.org/@intlify/core-base/-/core-base-9.6.4.tgz"
+  integrity sha512-NezA5NUpdlSPXTLCWzmd9xhLalfhL0sylqDjBUW9gF12t3jOtKYqqB5lD4FZbxkGdD/l+NMPitq44j8+i5D8UA==
+  dependencies:
+    "@intlify/message-compiler" "9.6.4"
+    "@intlify/shared" "9.6.4"
+
+"@intlify/message-compiler@9.6.4":
+  version "9.6.4"
+  resolved "https://registry.npmjs.org/@intlify/message-compiler/-/message-compiler-9.6.4.tgz"
+  integrity sha512-Ppkyh/dAw0Fq8cGSMQw5P1RgUDYNgmgM5y4d0JGw7Qgnbm085TeVDf82UdJtIk3iIbxrnR0jNUf1pNESnyHrPw==
+  dependencies:
+    "@intlify/shared" "9.6.4"
+    source-map-js "^1.0.2"
+
+"@intlify/shared@9.6.4":
+  version "9.6.4"
+  resolved "https://registry.npmjs.org/@intlify/shared/-/shared-9.6.4.tgz"
+  integrity sha512-dsmya7s6KK58UD60cDWqbpkQcllFpPB/f4dz8OqgK5Pe+CgeatKJjpuAG516DHXX0BtD0P5X6JCD45+1FMvvZw==
+
 "@jridgewell/gen-mapping@^0.3.2":
   version "0.3.3"
   resolved "https://registry.npmjs.org/@jridgewell/gen-mapping/-/gen-mapping-0.3.3.tgz"
@@ -966,6 +987,11 @@ has@^1.0.3:
   resolved "https://registry.npmjs.org/has/-/has-1.0.4.tgz"
   integrity sha512-qdSAmqLF6209RFj4VVItywPMbm3vWylknmB3nvNiUIs72xAimcM8nVYxYr7ncvZq5qzk9MKIZR8ijqD/1QuYjQ==
 
+highlight-words-core@^1.2.2:
+  version "1.2.2"
+  resolved "https://registry.npmjs.org/highlight-words-core/-/highlight-words-core-1.2.2.tgz"
+  integrity sha512-BXUKIkUuh6cmmxzi5OIbUJxrG8OAk2MqoL1DtO3Wo9D2faJg2ph5ntyuQeLqaHJmzER6H5tllCDA9ZnNe9BVGg==
+
 human-signals@^2.1.0:
   version "2.1.0"
   resolved "https://registry.npmjs.org/human-signals/-/human-signals-2.1.0.tgz"
@@ -1763,6 +1789,22 @@ vue-eslint-parser@^9.3.1:
     esquery "^1.4.0"
     lodash "^4.17.21"
     semver "^7.3.6"
+
+vue-highlight-words@^3.0.1:
+  version "3.0.1"
+  resolved "https://registry.npmjs.org/vue-highlight-words/-/vue-highlight-words-3.0.1.tgz"
+  integrity sha512-t6L0+KRaMzX5RVubWl6Sog+Aa+U0kHsbUlDIrln1VfajR2SEg+zQYfXov8UmX3MLNOfd6cv7MCM6LclqNlW4ww==
+  dependencies:
+    highlight-words-core "^1.2.2"
+
+vue-i18n@^9.6.4:
+  version "9.6.4"
+  resolved "https://registry.npmjs.org/vue-i18n/-/vue-i18n-9.6.4.tgz"
+  integrity sha512-xYoUk0ya6RoTjXtR0w4aHrzPT3CbAZfBMcDj2IHUkP+ddpp1V7M4KYBBHwlHncEapf/skm0BoXOIe7RJ5d/Epg==
+  dependencies:
+    "@intlify/core-base" "9.6.4"
+    "@intlify/shared" "9.6.4"
+    "@vue/devtools-api" "^6.5.0"
 
 vue-resize@^2.0.0-alpha.1:
   version "2.0.0-alpha.1"

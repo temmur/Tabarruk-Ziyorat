@@ -1,6 +1,6 @@
 <template>
-   <CAboutHeader/>
-   <Header/>
+  <Header class=""/>
+   <CAboutHeader class="fixed"/>
    <CAbout/>
    <CMap/>
    <CStatements/>

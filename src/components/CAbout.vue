@@ -1,7 +1,7 @@
 <template>
     <div class="">
       <div class='container'>
-        <div class="grid grid-cols-2 gap-1 max-lg:grid-cols-1">
+        <div class="grid grid-cols-2 gap-1 max-lg:grid-cols-1 py-10">
             <CAbout-Content />
             <CAboutCountriesVue/>
         </div>

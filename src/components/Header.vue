@@ -1,20 +1,13 @@
 <template>
-    <header class="header" :class="{'fixed bg-blueBackground z-50 top-0 transition ease-in-out delay-100' : isSticky}">
-        <div class="container">
-            <div class="header-inner">
+    <header class="header" :class="{'fixed bg-blueBackground z-50 top-0 transition ease-in-out delay-100 w-full' : isSticky}">
+        <div class="container flex items-center justify-between">
                 <div class="header-logo max-sm:w-[80%]">
                   <router-link to="/"><img src="../assets/images/Logo.svg" alt=""></router-link>
                 </div>
                 <nav class="max-lg:hidden" :class="showSearch? 'hidden' : 'block'">
                    <CHeaderNav/>
                 </nav>
-              <!-- <div class="flex items-center">
-                <CSearch class="max-lg:'hidden'" v-show="showSearch"/>
-                <i class="fa-solid fa-xmark text-xl" :class="showSearch? 'block' : 'hidden'" @click="openSearch"></i>
-              </div> -->
                 <i class="fas fa-bars text-2xl hidden max-lg:block" :class="state? 'fas fa-bars' : 'fa-solid fa-xmark'" @click="state = !state"></i> 
-               
-            </div>
         </div>
     </header>
     <CResponseNav :class="state? 'hidden' : 'fixed'"/>
@@ -30,9 +23,7 @@ const state = ref(true)
 const isSticky = ref(false)
 const handleScroll = () => {
       if (window.pageYOffset > 75 ) {
-        if(window.screen.width < 1025){
-            isSticky.value = true;
-        }
+        isSticky.value = true;
       } else {
         isSticky.value = false;
       }
@@ -42,10 +33,7 @@ const handleScroll = () => {
       window.addEventListener('scroll', handleScroll);
     });
 </script>
-<style scoped>
-
-header{
-}
+<!-- <style scoped>
 .header-inner {
     display: flex;
     align-items: center;
@@ -125,7 +113,7 @@ line-height: 130%; /* 18.2px */
 }
 .nav-language{
     display: none;
-    grid-template-columns: 1 fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     position: absolute;
     right: 100px;
 }
@@ -137,4 +125,4 @@ line-height: 130%; /* 18.2px */
     color: rgb(226, 68, 68);
     transition: .2s ease-in-out;
 }
-</style>
+</style> -->

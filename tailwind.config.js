@@ -39,6 +39,9 @@ export default {
         star: "url('images/Star.svg')",
         map: "url('images/Map.svg')",
         video: "url('images/banner.png')"
+      },
+      background:{
+      
       }
     },
   },

@@ -1,7 +1,11 @@
 <template>
         <ul class="absolute w-[400px] top-6  bg-blurBack rounded-xl p-4 grid grid-cols-2 backdrop-blur-lg">
-            <li class="flex items-center justify-start my-2 group hover" v-for="(el, idx) in data" :key="idx" >
-        <img :src="el.img" alt="" class="mr-2">
+            <li class="flex items-center justify-start my-2 group hover"
+             v-for="(el, idx) in data" :key="idx" >
+        <img :src="el.img" 
+        alt="" 
+        class="mr-2"
+        @click="$i18n.locale = `en`">
         <div class="">
             <p class="text-base child group-hover:text-redColor">{{ el.title }}</p>
             <p class="text-sm text-grayColor">{{ el?.destination }} </p>
@@ -10,11 +14,11 @@
         </ul>
         
 </template>
-<script setup lang="ts">
+<script lang="ts">
 import { defineProps, ref, reactive, inject, defineEmits } from 'vue';
 import NavLists from '../Header/NavLists.vue'
 interface Props {
-    country: string
+  country: string
     flag: string
     des?: string
     data?: {[key: string]: string}[]
@@ -28,4 +32,8 @@ interface Props {
     (e: 'on-blur'): void
     (e: 'focus-out'): void
   }>()
+  function changeLocal(){
+  localStorage.setItem('locale', 'ru' )
+  window.location.reload()
+}
 </script>

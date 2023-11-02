@@ -1,5 +1,5 @@
 <template>
-    <div class="flex items-center justify-between">
+    <div class="container flex justify-between py-5 max-md:block">
         <CContactInfo/>
         <CContactMap/>
     </div>

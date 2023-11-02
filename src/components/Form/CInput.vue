@@ -36,7 +36,3 @@
     (e: 'focus-out'): void
   }>()
   </script>
-  
-  <style scoped>
-    
-</style>

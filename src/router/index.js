@@ -3,6 +3,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
+  linkActiveClass: 'activeClass',
   routes: [
     {
       path: '/',
@@ -38,6 +39,11 @@ const router = createRouter({
       path: '/students/:slug(\\d+)',
       name: "StudentsSingle",
       component: () => import('@/pages/PStudents/PStudentSingle.vue')
+    },
+    {
+      path: '/exam',
+      name: 'exam',
+      component: ()=> import ('@/pages/PExam.vue')
     }
   ]
 })
