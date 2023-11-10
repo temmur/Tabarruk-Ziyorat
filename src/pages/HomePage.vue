@@ -31,6 +31,7 @@ import Button from '../components/Buttons/Button.vue';
 import CInstagram from '../components/CInstagram.vue';
 import CPartners from '../components/CPartners.vue';
 import CFooter from '../components/CFooter.vue'
+import CBreadcrumbs from '../components/CBreadcrumbs.vue';
 import {ref, provide, defineAsyncComponent, reactive, onMounted } from 'vue'
 const backgroundImage = ref('');
 
