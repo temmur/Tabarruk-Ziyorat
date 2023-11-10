@@ -34,14 +34,17 @@ export default {
         grayColor: "rgba(255, 255, 255, 0.60)",
         searchBorder: 'rgba(255, 255, 255, 0.20)',
         cardColor: 'rgba(255, 255, 255, 0.80)',
+        newsBg: "rgb(32, 34, 51)",
+        newsSubtitle: "#969696"
       },
       backgroundImage:{
         star: "url('images/Star.svg')",
         map: "url('images/Map.svg')",
         video: "url('images/banner.png')"
       },
-      background:{
-      
+      fontSize:{
+        40: "40px",
+        80: "80px"
       }
     },
   },

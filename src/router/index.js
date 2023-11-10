@@ -50,6 +50,11 @@ const router = createRouter({
       name: 'News',
       component: ()=> import ('@/pages/PNews.vue')
     },
+    {
+      path: "/news-single",
+      name: 'News-Single',
+      component: ()=> import ('@/pages/PNews/NewsSingle.vue')
+    }
   ]
 })
 

@@ -3,7 +3,10 @@
     <Header/>
     <div class="container">
         <CBreadcrumbs/>
-        <div class="grid gird-cols-4">
+        <div class="grid grid-cols-4 gap-5 my-5">
+            <CNewsCard/>
+            <CNewsCard/>
+            <CNewsCard/>
             <CNewsCard/>
         </div>
     </div>
