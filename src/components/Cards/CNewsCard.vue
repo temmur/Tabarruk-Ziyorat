@@ -9,8 +9,7 @@
         style="display: inline;
   -webkit-line-clamp: 2; display: -webkit-box;
   -webkit-box-orient: vertical;
-  word-wrap: break-word;"
-      >
+  word-wrap: break-word;">
         {{ data.subtitle }}
       </p>
       <p class="text-lightGray text-sm pt-2">14.12.2023</p>
