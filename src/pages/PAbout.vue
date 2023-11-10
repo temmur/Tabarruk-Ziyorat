@@ -1,7 +1,7 @@
 <template>
   <Header class=""/>
    <CAboutHeader class="fixed"/>
-  <div class="container">
+  <div class="container pt-5">
     <CBreadcrumbs/>
   </div>
    <CAbout/>
