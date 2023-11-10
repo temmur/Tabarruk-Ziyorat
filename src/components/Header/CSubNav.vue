@@ -5,7 +5,7 @@
         <img :src="el.img" 
         alt="" 
         class="mr-2"
-        @click="$i18n.locale = `en`">
+        @click="$i18n.locale = el.lang">
         <div class="">
             <p class="text-base child group-hover:text-redColor">{{ el.title }}</p>
             <p class="text-sm text-grayColor">{{ el?.destination }} </p>
@@ -32,8 +32,5 @@ interface Props {
     (e: 'on-blur'): void
     (e: 'focus-out'): void
   }>()
-  function changeLocal(){
-  localStorage.setItem('locale', 'ru' )
-  window.location.reload()
-}
+
 </script>

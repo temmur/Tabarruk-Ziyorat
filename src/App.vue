@@ -1,6 +1,10 @@
 <template>
- <div>
-  <div id="breadcrumb"></div>
+ <div class="bg-transparent">
+  <div id="breadcrumb">
+  </div>
   <RouterView />
  </div>
 </template>
+<script setup  lang="ts">
+import Header from './components/Header.vue';
+</script>

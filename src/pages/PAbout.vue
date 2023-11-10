@@ -1,6 +1,7 @@
 <template>
   <Header class=""/>
-   <CAboutHeader class="fixed"/>
+   <CAboutHeader class="flex"/>
+   <CBreadCrumb/>
    <CAbout/>
    <CMap/>
    <CStatements/>
@@ -23,6 +24,7 @@ import CStatements from "../AboutComponents/CStatements.vue";
 import CVideo from "../AboutComponents/CVideo.vue";
 import CContact from "../AboutComponents/CContact.vue";
 import CAboutHeader from "../AboutComponents/CAboutHeader/CAboutHeader.vue";
+import CBreadCrumb from '../components/CBreadCrumb.vue';
 import {ref, reactive} from 'vue'
 const { x, y } = useCustomToast()
 const { mounted } = useMounted()

@@ -3,7 +3,6 @@
         <CTitleText title="Statements"/>
         <p class="text-center">All countries that we represent</p>
         <div>
-        
             <div >
             <CCard class=""/>
         </div>

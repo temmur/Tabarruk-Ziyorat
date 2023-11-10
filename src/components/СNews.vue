@@ -7,13 +7,15 @@
             <News v-for="(el, idx) of NewsData" :key="idx" :title="el.title" :subtitle="el.subtitle" :img="el.img" class="grid grid-cols-2 "/>
         </div>
        <div  class="flex justify-end mt-5">
-        <CButton variant="default" title="All news">
+        <RouterLink to="/news">
+            <CButton variant="default" title="All news">
             <template #suffix>
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
 <path d="M5 9.99992H15M15 9.99992L10.8333 5.83325M15 9.99992L10.8333 14.1666" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
             </template>
         </CButton>
+        </RouterLink>
        </div>
         <div>
         </div>

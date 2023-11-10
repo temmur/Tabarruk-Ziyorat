@@ -26,7 +26,8 @@ export default {
         inputDefault: "#2C2E3E",
         cardBackground: '#252738;',
         blueBackground: 'rgb(8, 10, 28)',
-        mobileSearch: 'rgba(255, 255, 255, 0.12)'
+        mobileSearch: 'rgba(255, 255, 255, 0.12)',
+        
       },
       colors:{
         redColor: '#E54545',
@@ -34,14 +35,17 @@ export default {
         grayColor: "rgba(255, 255, 255, 0.60)",
         searchBorder: 'rgba(255, 255, 255, 0.20)',
         cardColor: 'rgba(255, 255, 255, 0.80)',
+        lightGray: '#969696',
+        newsCardColor: "#202233"
       },
       backgroundImage:{
         star: "url('images/Star.svg')",
         map: "url('images/Map.svg')",
         video: "url('images/banner.png')"
       },
-      background:{
-      
+      fontSize: {
+        40: "40px",
+        80: "80px"
       }
     },
   },
