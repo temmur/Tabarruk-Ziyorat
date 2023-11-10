@@ -44,7 +44,12 @@ const router = createRouter({
       path: '/exam',
       name: 'exam',
       component: ()=> import ('@/pages/PExam.vue')
-    }
+    },
+    {
+      path: '/news',
+      name: 'News',
+      component: ()=> import ('@/pages/PNews.vue')
+    },
   ]
 })
 
