@@ -1,0 +1,35 @@
+<template>
+      <div class="min-h-screen flex flex-col bg-bgColor">
+    <Header />
+    <div class="flex-1 container">
+        <CBreadcrumbs/>
+        <div class="max-w-[900px] m-auto my-8">
+            <p class="text-40 font-semibold">Hungary is in talks with Turkey on gas purchases and transit</p>
+            <ul class="flex items-center my-4">
+                <li class="flex items-center mr-5"><img src="images/CNews/calendar.svg" alt="" class="mr-2">20.12.2023</li>
+                <li class="flex items-center"><img src="images/CNews/eye.svg" alt="" class="mr-2">13.201.2023</li>
+            </ul>
+            <img src="images/CNews/news1.jpeg" alt="" class="rounded-xl">
+        </div>
+    </div>
+    <CFooter />
+  </div>
+</template>
+<script setup lang="ts">
+import Header from '../../components/Header.vue';
+import CFooter from '../../components/CFooter.vue';
+import CBreadcrumbs from '../../components/CBreadcrumbs.vue';
+import {ref, reactive, onMounted} from 'vue'
+const news = ref('')
+const fetchNews = async () => {
+  try {
+    const response = await fetch('../../../src/assets/Data/fake.json');
+    const data = await response.json();
+    news.value = data;
+  } catch (error) {
+    console.error('Error fetching news:', error);
+  }
+  return news
+};
+onMounted(fetchNews)
+</script>

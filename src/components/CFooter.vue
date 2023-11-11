@@ -1,5 +1,5 @@
 <template>
-    <div class="relative border-t-[0.6px] border-gray-400 overflow-hidden pb-3">
+        <div class="relative border-t-[0.6px] border-gray-400 overflow-hidden pb-3">
       <div class="container grid grid-cols-2 max-md:grid-cols-1">
        <img src="images/vectorIcon.svg" alt="" class="absolute left-0 max-md:hidden">
         <div class="max-sm:w-[80%]">
