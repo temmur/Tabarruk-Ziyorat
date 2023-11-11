@@ -5,7 +5,8 @@
         "images": [
             "images/CNews/news1.jpeg", "images/CNews/news1.jpeg", "images/CNews/news1.jpeg", "images/CNews/news1.jpeg"
         ],
-        "date": "20.12.2023"
+        "date": "20.12.2023",
+        "id": 1
     },
     {
         "title": "The President of Italy was solemnly welcomed at his residence in Tashkent - photo",
@@ -13,7 +14,8 @@
         "images": [
             "images/CNews/news1.jpeg", "images/CNews/news1.jpeg", "images/CNews/news1.jpeg", "images/CNews/news1.jpeg"
         ],
-        "date": "12.03.2023"
+        "date": "12.03.2023",
+        "id": 2
     },
     {
         "title": "The President of Italy was solemnly welcomed at his residence in Tashkent - photo",
@@ -21,7 +23,8 @@
         "images": [
             "images/CNews/news1.jpeg", "images/CNews/news1.jpeg", "images/CNews/news1.jpeg", "images/CNews/news1.jpeg"
         ],
-        "date": "21.11.2023"
+        "date": "21.11.2023",
+        "id": 3
     },
     {
         "title": "The President of Italy was solemnly welcomed at his residence in Tashkent - photo",
@@ -29,6 +32,7 @@
         "images": [
             "images/CNews/news1.jpeg", "images/CNews/news1.jpeg", "images/CNews/news1.jpeg", "images/CNews/news1.jpeg"
         ],
-        "date": "31.02.2023"
+        "date": "31.02.2023",
+        "id": 4
     }
 ]

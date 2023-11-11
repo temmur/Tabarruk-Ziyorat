@@ -51,7 +51,7 @@ const router = createRouter({
       component: ()=> import ('@/pages/PNews.vue')
     },
     {
-      path: "/news-single",
+      path: "/news-single/:slug(\\d+)",
       name: 'News-Single',
       component: ()=> import ('@/pages/PNews/NewsSingle.vue')
     }
