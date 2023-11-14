@@ -4,7 +4,6 @@
         <CNavLangVue v-if="!showSearch"/>
         <CSearch v-if="showSearch"/>
       <CSearchIconVue @click="openSearch()"/>
-     
     </div>
 </template>
 <script setup lang="ts">
