@@ -1,5 +1,5 @@
 <template>
-   <router-link :to="{name: 'News-Single', params: { slug: data?.id }}">
+   <router-link :to="{name: 'News-Single', params:{ slug: data?.id }}">
     <div class="bg-newsBg p-3 rounded-xl">
         <img :src="data.images[0]" alt="" class="rounded-xl">
         <div class="py-3">

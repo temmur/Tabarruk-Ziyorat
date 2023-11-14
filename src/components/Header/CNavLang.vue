@@ -1,7 +1,7 @@
 <template>
    <ul>
     <li class="relative border-l border-r px-3"  @blur="toggleClose('language')">
-      <img src="images/UkLang.svg" alt="" @click="toggleNav('language')">
+      <img src="/images/UkLang.svg" alt="" @click="toggleNav('language')">
    <Transition name="fade" mode="out-in">
     <CSubNav v-if="currentDropdown === 'language'" class="left-[-300px] grid-cols-3 " :data="language"/>
    </Transition>
@@ -29,47 +29,47 @@ const toggleClose=(dropDownName)=>{
 const language = reactive([
     {
         title: "Русский",
-        img: 'images/languageLogo/russLang.svg',
+        img: '/images/languageLogo/russLang.svg',
         lang: "ru"
     },
     {
         title: "Қазақша",
-        img: 'images/languageLogo/kazLang.svg',
+        img: '/images/languageLogo/kazLang.svg',
         lang: 'kz'
     },
     {
         title: "Türkmen",
-        img: "images/languageLogo/turLang.svg",
+        img: "/images/languageLogo/turLang.svg",
         lang: 'tr'
     },
     {
         title: "English",
-        img: "images/languageLogo/ukLang.svg",
+        img: "/images/languageLogo/ukLang.svg",
         lang: 'en'
     },
     {
         title: 'Қыргызча',
-        img: 'images/languageLogo/kyrLang.svg',
+        img: '/images/languageLogo/kyrLang.svg',
         lang: 'qz'
     },
     {
         title: "Azərbaycan",
-        img: 'images/languageLogo/azerLang.svg',
+        img: '/images/languageLogo/azerLang.svg',
         lang: 'azr'
     },
     {
         title: 'O’zbekcha',
-        img: 'images/languageLogo/uzbLang.svg',
+        img: '/images/languageLogo/uzbLang.svg',
         lang: 'uz'
     },
     {
         title: 'Türk',
-        img: 'images/languageLogo/turkLang.svg',
+        img: '/images/languageLogo/turkLang.svg',
         lang: 'turk'
     },
     {
         title: 'Magyar', 
-        img: 'images/languageLogo/hungLang.svg',
+        img: '/images/languageLogo/hungLang.svg',
         lang: 'hg'
     }
 ])

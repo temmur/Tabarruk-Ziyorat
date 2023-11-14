@@ -1,0 +1,185 @@
+[
+    {
+        "name": "Turkey",
+        "subtitle": "Turkey, also called Türkiye, country that occupies a unique geographic position, lying partly in Asia and partly in Europe. Throughout its history it has acted as both a barrier and a bridge between the two continents.",
+        "attractions": 13,
+        "pollution": "84,78 mln",
+        "religions":{
+            "islam":{
+                "statistic": 97,
+                "destinations": {
+
+                }
+            },
+            "christianity":{
+                "statistic": 2,
+                "destinations":{
+
+                }
+            },
+            "buddism":{
+                "statistic": 1,
+                "destinations":{
+
+                }
+            }
+        }
+    },
+    {
+        "name": "Uzbekistan",
+        "subtitle": "Uzbekiston buyuk Davlat Uzbekiston tengdir Uzbekistonga",
+        "attractions": 13,
+        "pollution": "84,78 mln",
+        "religions":{
+            "islam":{
+                "statistic": 97,
+                "destinations": {
+
+                }
+            },
+            "christianity":{
+                "statistic": 3,
+                "destinations":{
+
+                }
+            },
+            "buddism":{
+                "statistic": 0,
+                "destinations":{
+
+                }
+            }
+        }
+    },
+    {
+        "name": "Turkmenistan",
+        "subtitle": "Turkey, also called Türkiye, country that occupies a unique geographic position, lying partly in Asia and partly in Europe. Throughout its history it has acted as both a barrier and a bridge between the two continents.",
+        "attractions": 13,
+        "pollution": "84,78 mln",
+        "religions":{
+            "islam":{
+                "statistic": 95,
+                "destinations": {
+
+                }
+            },
+            "christianity":{
+                "statistic":3,
+                "destinations":{
+
+                }
+            },
+            "buddism":{
+                "statistic": 2,
+                "destinations":{
+
+                }
+            }
+        }
+    },
+    {
+        "name": "Azerbaijan",
+        "subtitle": "Turkey, also called Türkiye, country that occupies a unique geographic position, lying partly in Asia and partly in Europe. Throughout its history it has acted as both a barrier and a bridge between the two continents.",
+        "attractions": 13,
+        "pollution": "84,78 mln",
+        "religions":{
+            "islam":{
+                "statistic": 50,
+                "destinations": {
+
+                }
+            },
+            "christianity":{
+                "statistic": 45,
+                "destinations":{
+
+                }
+            },
+            "buddism":{
+                "statistic": 5,
+                "destinations":{
+
+                }
+            }
+        }
+    },
+    {
+        "name": "Hungary",
+        "subtitle": "Turkey, also called Türkiye, country that occupies a unique geographic position, lying partly in Asia and partly in Europe. Throughout its history it has acted as both a barrier and a bridge between the two continents.",
+        "attractions": 13,
+        "pollution": "84,78 mln",
+        "religions":{
+            "islam":{
+                "statistic": 30,
+                "destinations": {
+
+                }
+            },
+            "christianity":{
+                "statistic": 60,
+                "destinations":{
+
+                }
+            },
+            "buddism":{
+                "statistic": 10,
+                "destinations":{
+
+                }
+            }
+        }
+    },
+    {
+        "name": "Kazakhstan",
+        "subtitle": "Turkey, also called Türkiye, country that occupies a unique geographic position, lying partly in Asia and partly in Europe. Throughout its history it has acted as both a barrier and a bridge between the two continents.",
+        "attractions": 13,
+        "pollution": "84,78 mln",
+        "religions":{
+            "islam":{
+                "statistic": 90,
+                "destinations": {
+
+                }
+            },
+            "christianity":{
+                "statistic": 8,
+                "destinations":{
+
+                }
+            },
+            "buddism":{
+                "statistic": 2,
+                "destinations":{
+
+                }
+            }
+        }
+    },
+    {
+        "name": "Kyrgyzistan",
+        "subtitle": "Turkey, also called Türkiye, country that occupies a unique geographic position, lying partly in Asia and partly in Europe. Throughout its history it has acted as both a barrier and a bridge between the two continents.",
+        "attractions": 13,
+        "pollution": "84,78 mln",
+        "religions":{
+            "islam":{
+                "statistic": 95,
+                "destinations": {
+
+                }
+            },
+            "christianity":{
+                "statistic": 2,
+                "destinations":{
+
+                }
+            },
+            "buddism":{
+                "statistic": 3,
+                "destinations":{
+
+                }
+            }
+        }
+    }
+    
+]

@@ -36,7 +36,7 @@ const router = createRouter({
       ]
     },
     {
-      path: '/students/:slug(\\d+)',
+      path: '/students',
       name: "StudentsSingle",
       component: () => import('@/pages/PStudents/PStudentSingle.vue')
     },
@@ -48,13 +48,19 @@ const router = createRouter({
     {
       path: '/news',
       name: 'News',
-      component: ()=> import ('@/pages/PNews.vue')
+      component: ()=> import ('@/pages/PNews.vue'),
     },
     {
       path: "/news-single/:slug(\\d+)",
-      name: 'News-Single',
-      component: ()=> import ('@/pages/PNews/NewsSingle.vue')
+    name: 'News-Single',
+    component: ()=> import ('@/pages/PNews/NewsSingle.vue')
+    },
+    {
+      path: '/country/:slug(\\d+)',
+      name: 'Country',
+      component: ()=> import ('@/pages/Country/CountrySingle.vue')
     }
+   
   ]
 })
 

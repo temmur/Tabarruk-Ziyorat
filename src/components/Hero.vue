@@ -2,15 +2,13 @@
     <div class="container">
       <div class="hero-inner flex flex-col items-center overflow-hidden">
         <p class="text-xl flex justify-center max-sm:text-sm">
-          <img class="max-sm:w-4 max-sm:mr-2" src="../assets/images/map-pin-alt.svg" alt="" />Samarkand, Uzbekistan
+          <img class="max-sm:w-4 max-sm:mr-2" src="../assets/images/map-pin-alt.svg" alt="" />{{ $t('desLocation') }}
         </p>
         <h1 class="text-center text-[5rem] capitalize font-bannerFont font-bold banner-shadow max-sm:text-[40px]">
-          registan square
+         {{ $t('heroTitle') }}
         </h1>
         <p class="text-center text-xl font-medium mt-[40px] w-[60%] max-lg:w-[100%] max-sm:mt-0 max-sm:text-sm leading-[130%] max-sm:mt-4">
-          Stunning showcase of Islamic architecture in Samarkand, Uzbekistan, with three ornate
-          madrasas adorned in blue tiles and calligraphic inscriptions, dating back to the 15th
-          century.
+          {{ $t('heroSub') }}
         </p>
         <div class="text-center mt-10">
           <Button variant="primary" title="Explore" class="inline-flex justify-center text-center">

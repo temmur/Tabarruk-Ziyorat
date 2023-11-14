@@ -1,16 +1,23 @@
 <template>
       <div class="min-h-screen flex flex-col bg-bgColor">
-    <Header />
+        <Header/>
     <div class="flex-1 container">
         <CBreadcrumbs/>
         <div class="max-w-[900px] m-auto my-8">
-            <p class="text-40 font-semibold">{{ single?.title }}</p>
+            <p class="text-40 font-semibold max-md:text-2xl">{{ single?.title }}</p>
             <ul class="flex items-center my-4">
-                <li class="flex items-center mr-5"><img src="images/CNews/calendar.svg" alt="" class="mr-2">20.12.2023</li>
-                <li class="flex items-center"><img src="images/CNews/eye.svg" alt="" class="mr-2">13.201.2023</li>
+                <li class="flex items-center mr-5"><img src="/images/CNews/calendar.svg" alt="" class="mr-2">20.12.2023</li>
+                <li class="flex items-center"><img src="/images/CNews/eye.svg" alt="" class="mr-2">13.201.2023</li>
             </ul>
-            <img src="images/CNews/news1.jpeg" alt="" class="rounded-xl">
-            <p>{{single?.subtitle}}</p>
+            <img :src="single?.images[0]" alt="" class="rounded-xl">
+            <p class="my-5 text-base">{{single?.subtitle}}</p>
+           <div class="grid grid-cols-3 gap-5 max-md:grid-cols-2">
+            <img :src="img"
+            v-for="img in single?.images"
+            :key="img"
+            alt="" class="rounded-md">
+           </div>
+           <p class="my-5 text-base pb-10 border-b border-gray-700">{{single?.subtitle}}</p>
         </div>
     </div>
     <CFooter />
@@ -40,4 +47,5 @@ const fetchNews = async () => {
   return single
 };
 onMounted(fetchNews)
+
 </script>

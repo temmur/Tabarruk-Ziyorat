@@ -1,8 +1,8 @@
 <template lang="">
     <div class="mt-[64px]">
        <div class="container">
-        <CTitle title="How many countries"/>
-        <p class="text-center text-2xl mb-10 max-sm:text-base">All countries that we represent</p>
+        <CTitle :title="$t('howManyCountries')"/>
+        <p class="text-center text-2xl mb-10 max-sm:text-base">{{$t('allCountriesTitle')}}</p>
         <div class="grid grid-cols-4 gap-4 max-sm:grid-cols-2 ">
             <CCountry v-for="(el, idx) in countryList" :key="idx" :country="el.country" :dest="el.destination" :img="el.img"/>
         </div>
@@ -17,7 +17,7 @@ import {reactive} from 'vue'
 const countryList = reactive(
     [
         {
-            country:"Türkiye",
+            country:"Turkey",
             destination: 27,
             img: '/images/Turkiye.svg'
         },

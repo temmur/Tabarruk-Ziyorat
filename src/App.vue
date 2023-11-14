@@ -1,5 +1,5 @@
 <template>
- <div>
+ <div> 
   <div id="breadcrumb"></div>
   <RouterView />
  </div>
